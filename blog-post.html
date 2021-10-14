@@ -119,31 +119,35 @@
 						are avoiding calling so many performance heavy functions later on the script.
 					</p>
 
-					<p> When player presses the "Q" key "timeScale" is changed to 0.4 and the pitch of the background audio is
+					<p> When player presses the "Q" key "timeScale" is changed to 0.4 and the pitch of the background
+						audio is
 						linearly interpolates between 1.0 to 0.4
 						with the help of "Mathf.Lerp" in order to have a slow motion effect. (Please keep in mind that
 						this part of the code has nothing to do with manipulating post processing stack)
 					</p>
 					<br>
 					<img class="img-fluid" src="assets/images/blog/code1.png" alt="image">
-					
+
 					<p>
 						<br>
-						This is the part where I'm manipulating post processing effects on runtime thanks to this script.
+						This is the part where I'm manipulating post processing effects on runtime thanks to this
+						script.
 						"TryGetSettings<Vignette>" works similar to GetComponent in some ways. It returns a vignette in
-						this case and we store that in our same named variable.
+							this case and we store that in our same named variable.
 					</p>
 
-					 <p>After that you can override the intensity or other properties such as smoothness and/or roundness of the vignette to your
+					<p>After that you can override the intensity or other properties such as smoothness and/or roundness
+						of the vignette to your
 						desired amount.
 					</p>
 					<br>
 					<img class="img-fluid" src="assets/images/blog/code2.png" alt="image">
-					
+
 					<P>
 						<br>
-						Same principles can be applied to other post processing effects as well. As you can see in the example above I 
-						added a chromatic aberration effect and overrided its intensity	
+						Same principles can be applied to other post processing effects as well. As you can see in the
+						example above I
+						added a chromatic aberration effect and overrided its intensity
 					</P>
 
 					<p>
@@ -160,9 +164,9 @@
 						</li>
 						<li class="mb-2"><a
 								href="https://answers.unity.com/questions/1355103/modifying-the-new-post-processing-stack-through-co.html">
-								Unity Answers </a> 
+								Unity Answers </a>
 						</li>
-								
+
 					</ul>
 
 					<blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
@@ -189,20 +193,20 @@
 					<div id="disqus_thread"></div>
 					<script>
 						/**
-						 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
-						 *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+						 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT
+						 *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR
 						 *  PLATFORM OR CMS.
-						 *  
-						 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+						 *
+						 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
 						 *  https://disqus.com/admin/universalcode/#configuration-variables
 						 */
 						/*
 						var disqus_config = function () {
 						    // Replace PAGE_URL with your page's canonical URL variable
-						    this.page.url = PAGE_URL;  
-						    
+						    this.page.url = PAGE_URL;
+
 						    // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-						    this.page.identifier = PAGE_IDENTIFIER; 
+						    this.page.identifier = PAGE_IDENTIFIER;
 						};
 						*/
 
